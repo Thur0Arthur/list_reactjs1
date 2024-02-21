@@ -1,7 +1,6 @@
 "use client"
 import { listRecuder } from "@/reduces/listReducer";
 import { useReducer, useState } from "react";
-import './globals.css'
 
 const Page = () => {
   const [list, dispath] = useReducer(listRecuder, []);
@@ -52,7 +51,7 @@ const Page = () => {
   }
 
   return(
-    <div className="flex flex-col justify-center items-center bg-white">
+    <div className="flex flex-col justify-center items-center bg-black">
       <h1 className="text-3xl mt-6">Lista de algo</h1>
       <div className=" flex boder w-2/3 bg-red-800 border-gray-400 p-4 my-4">
         <input placeholder="Digitar" type="text" className="flex w-5/6 boder border-white  p-3 bd-transparent text-black"
