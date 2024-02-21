@@ -1,6 +1,7 @@
 "use client"
 import { listRecuder } from "@/reduces/listReducer";
 import { useReducer, useState } from "react";
+import './globals.css'
 
 const Page = () => {
   const [list, dispath] = useReducer(listRecuder, []);
